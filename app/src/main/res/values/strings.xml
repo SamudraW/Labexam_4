@@ -20,4 +20,6 @@
     <string name="evguests">No Of Guests</string>
     <string name="evfood">Food items</string>
     <string name="ehome">Events</string>
+    <string name="mheading">GATHERGENIE</string>
+    <string name="msheading">Plan Your Events With Us</string>
 </resources>

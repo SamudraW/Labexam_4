@@ -6,5 +6,5 @@ class EventRepository(
     suspend fun insert(event: Event) = db.getEventDao().insert(event)
     suspend fun delete(event: Event) = db.getEventDao().delete(event)
 
-    fun getAllEvents()= db.getEventDao().getAllEvents()
+    fun getAllEvents():List<Event> = db.getEventDao().getAllEvents()
 }

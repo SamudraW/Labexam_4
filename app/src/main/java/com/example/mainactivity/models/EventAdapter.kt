@@ -17,6 +17,7 @@ import kotlinx.coroutines.withContext
 class EventAdapter(events:List<Event>, repository: EventRepository, viewModel: EventData):
     RecyclerView.Adapter<EventViewHolder>() {
 
+
     var context: Context?= null
     val events = events
     val repository = repository
@@ -35,12 +36,12 @@ class EventAdapter(events:List<Event>, repository: EventRepository, viewModel: E
     }
 
     override fun onBindViewHolder(holder: EventViewHolder, position: Int) {
-        holder.evename.text = events.get(position).ename
-        holder.evetype.text = events.get(position).etype
-        holder.evevenue.text = events.get(position).evenue
-        holder.evedate.text = events.get(position).edate
-        holder.eveguests.text = events.get(position).eguests
-        holder.evefood.text = events.get(position).efood
+        holder.evename.text = events[position].ename
+        holder.evetype.text = events[position].etype
+        holder.evevenue.text = events[position].evenue
+        holder.evedate.text = events[position].edate
+        holder.eveguests.text = events[position].eguests
+        holder.evefood.text = events[position].efood
 
         holder.deleteButton.setOnClickListener{
             CoroutineScope(Dispatchers.IO).launch {
@@ -50,7 +51,7 @@ class EventAdapter(events:List<Event>, repository: EventRepository, viewModel: E
                     viewModel.setData(data)
                 }
             }
-            Toast.makeText(context,"Hello", Toast.LENGTH_LONG).show()
+            Toast.makeText(context,"Item Deleted", Toast.LENGTH_LONG).show()
             }
         }
 }

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="mainbtn">GET STARTED</string>
+    <string name="hoheading">WELCOME TO GATHERGENIE !</string>
+    <string name="schbtn">Schedule</string>
+    <string name="chkbtn">Checklist</string>
+    <string name="guebtn">Guests</string>
+    <string name="evebtn">Events</string>
+    <string name="aehedaing">Add Event</string>
+    <string name="ehname">Add Event Name</string>
+    <string name="ehtype">Add Event Type: Birthday Party</string>
+    <string name="ehvenue">Add Venue</string>
+    <string name="ehdate">Add Date</string>
+    <string name="ehguests">Add no of guests</string>
+    <string name="ehfood">Add Food Items</string>
+    <string name="evname">Event Name</string>
+    <string name="entype">Event Type</string>
+    <string name="evvenue">Event Venue</string>
+    <string name="evdate">Event Date</string>
+    <string name="evguests">No Of Guests</string>
+    <string name="evfood">Food items</string>
+    <string name="ehome">Events</string>
+</resources>

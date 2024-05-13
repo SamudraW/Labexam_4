@@ -76,7 +76,7 @@ class EventActivity : AppCompatActivity() {
             // Update UI after insertion
             val data = repository.getAllEvents()
             withContext(Dispatchers.Main) {
-                // Assuming you have a viewModel to update UI
+                //have a viewModel to update UI
                 viewModel.setData(data)
 
                 val intent = Intent(this@EventActivity, EventHomeActivity::class.java)
